@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="/js/components.js"></script>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/cart.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <script src="https://kit.fontawesome.com/fdb2a50f13.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <my-header></my-header>
+    <div class="cart-icon">
+        <p align="right" style="margin-right:70px;"> <i class="fa-solid fa-cart-shopping">
+                <span>0</span><sup>đ</sup></i></p>
+    </div>
+    <section class="product">
+        <div class=" container">
+            <div class=" product-items">
+
+
+                <div class=" product-item">
+                    <img src="/img/img-product/product1.png" width="60%">
+                    <div class=" product-item-text">
+                        <p><span>25000</span><sup>d</sup></p>
+                        <h1 style="font-weight: bold; font-size: 13px;">COCA </h1>
+                    </div>
+                    <button>Thêm vào giỏ hàng</button>
+                </div>
+
+                <div class=" product-item">
+                    <img src="/img/img-product/product1.png" width="60%">
+                    <div class=" product-item-text">
+                        <p><span>25000</span><sup>d</sup></p>
+                        <h1 style="font-weight: bold; font-size: 13px;"> ZERO SUGAR</h1>
+                    </div>
+                    <button>Thêm vào giỏ hàng</button>
+                </div>
+
+                <div class=" product-item">
+                    <img src="/img/img-product/product1.png" width="60%">
+                    <div class=" product-item-text">
+                        <p><span>55000</span><sup>d</sup></p>
+                        <h1 style="font-weight: bold; font-size: 13px;">DIET CAFFEINE FREE</h1>
+                    </div>
+                    <button>Thêm vào giỏ hàng</button>
+                </div>
+
+                <div class=" product-item">
+                    <img src="/img/img-product/product1.png" width="60%">
+                    <div class=" product-item-text">
+                        <p><span>25000</span><sup>d</sup></p>
+                        <h1 style="font-weight: bold; font-size: 13px;"> WILD CHERRY</h1>
+                    </div>
+                    <button>Thêm vào giỏ hàng</button>
+                </div>
+
+                <div class=" product-item">
+                    <img src="/img/img-product/product1.png" width="60%">
+                    <div class=" product-item-text">
+                        <p><span>35000</span><sup>d</sup></p>
+                        <h1 style="font-weight: bold; font-size: 13px;"> WILD CHERRY ZERO SUGAR</h1>
+                    </div>
+                    <button>Thêm vào giỏ hàng</button>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="cart">
+        <i class="fa-solid fa-circle-xmark"></i>
+        <form action="">
+            <h2>GIỎ HÀNG</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>SẢN PHẨM</th>
+
+                        <th>GIÁ</th>
+                        <th>SL</th>
+                        <th>CHỌN</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        
+
+                        <td style="display: flex;align-items: center;"><img src="img-product/product/2.png" alt="" width="70px">PEPSI</td>
+                        <td><p><span>15000</span><sup>d</sup></p></td>
+                        <td><input style="width: 30px; outline: none;" type="number" value="1" min="1"></td>
+                        <td style="cursor: pointer;">Xoa</td>
+                    </tr>
+
+                    <tr>
+                        <td style="display: flex;align-items: center;"><img src="img-product/product/3.png" alt="" width="70px">PEPSI</td>
+                        <td><p><span>15000</span><sup>d</sup></p></td>
+                        <td><input style="width: 30px; outline: none;" type="number" value="1" min="1"></td>
+                        <td style="cursor: pointer;">Xoa</td>
+                    </tr> 
+                    
+                    <tr>
+                        <td style="display: flex;align-items: center;"><img src="img-product/product/3.png" alt="" width="70px">PEPSI</td>
+                        <td><p><span>15000</span><sup>d</sup></p></td>
+                        <td><input style="width: 30px; outline: none;" type="number" value="1" min="1"></td>
+                        <td style="cursor: pointer;">Xoa</td>
+                    </tr>
+                    -->
+
+
+                </tbody>
+            </table>
+            <div style="text-align: right;" class="price-total">
+                <p style="font-weight: bold; margin-top: 20px;">TỔNG TIỀN: <span>0</span><sup>đ</sup></p>
+            </div>
+            <button>MUA</button>
+        </form>
+    </section>
+    <my-footer></my-footer>
+    <script src="/js/cart.js"></script>
+</body>
+
+</html>

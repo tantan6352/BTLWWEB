@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script type="module" src="/js/components.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Phần header -->
+        <my-header></my-header>
+
+        <!-- Phần Main -->
+        <main>
+
+            <section class="banner-s">
+                <div class="video" id="video">
+                    <div class="img-video" id="img_video">
+                        <!-- 
+                        <img src="img/video.png" alt="" class="img-fluid">
+                        <div class="play" id="play">
+                            <div class="play-content">
+                                <span><i class="ti-control-play"></i></span>
+                                <h3>Xem Video</h3>
+                            </div>
+                       
+                        </div>
+                    </div>
+
+                </div> -->
+
+
+            </section>
+            <!-- Hero Video -->
+            <section class="hero__video-container">
+                <video class="hero__video" type="video/mp4" src="/video/video1.mp4" autoplay loop muted></video>
+            </section>
+
+            <!-- Banner Video -->
+            <section class="banner">
+                <div class="video">
+                    <iframe width="914" height="514"
+                        src="https://www.youtube.com/embed/RJKcDcSNl8s?autoplay=1&loop=1&playlist=RJKcDcSNl8s&modestbranding=1&rel=0&controls=0&mute=1"
+                        title="Combo bánh mì & COCA-COLA Không Đường!" frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="ndung">
+                    <h2>Chào các tín đồ Coca!</h2>
+                    <p>Một hương vị mới ngọt ngào sẽ đến với bạn vào đúng dịp mùa xuân</p>
+                    <p>Bạn đã: <a class="ssang" href="/html/product.html">SẴN SÀNG?</a></p>
+                </div>
+            </section>
+
+            <!-- Hình ảnh quảng cáo -->
+            <div class="gallery">
+                <div class="main-hop">
+                    <img src="/img/banner/Thiết kế chưa có tên (14).png" alt="">
+                </div>
+                <div class="main-hop">
+                    <img src="/img/banner/Thiết kế chưa có tên (6).png" alt="">
+                </div>
+                <div class="main-hop">
+                    <img src="/img/banner/Thiết kế chưa có tên (8).png" alt="">
+                </div>
+                <div class="main-hop">
+                    <img src="/img/banner/Thiết kế chưa có tên (19).png" alt="">
+                </div>
+            </div>
+        </main>
+
+        <!-- Phần footer -->
+        <my-footer></my-footer>
+    </div>
+</body>
+
+</html>

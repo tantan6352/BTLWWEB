@@ -1,0 +1,10 @@
+:root {
+    --primary-header: #fc515b;
+    --primary-logo: #562731;
+    --white: #fefefe;
+    --Cyberpunk: rgb(255, 0, 51);
+    --hongphan: rgb(255, 182, 193);
+    --bau-troi: linear-gradient(90deg, rgb(135, 206, 235), rgb(70, 130, 180));
+    --yellow: #201f1e;
+    --green: #7dc880;
+}

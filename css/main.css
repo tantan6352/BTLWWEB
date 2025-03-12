@@ -1,0 +1,109 @@
+/* Hero Video */
+.hero__video-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero__video {
+    width: 100%;
+    height: auto;
+}
+
+.banner-s {
+    position: relative;
+    width: 100%;
+    padding-top: 43.4%;
+    background: url(/img/banner.png) no-repeat top/contain;
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.video iframe {
+    border-radius: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Nội dung banner */
+.ndung {
+    margin-left: 20px;
+    max-width: 400px;
+}
+
+.ndung h2 {
+    color: #eb5b5b;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.ndung p {
+    font-size: 18px;
+    color: #555;
+}
+
+.ssang {
+    font-size: 20px;
+    color: #f7b500;
+    text-decoration: underline;
+}
+
+.ssang:hover {
+    color: #ffa500;
+}
+
+/* Hình ảnh quảng cáo */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px auto;
+}
+
+.main-hop img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main-hop img:hover {
+    transform: scale(1.05);
+}
+
+/* Đáp ứng thiết bị di động */
+@media (max-width: 768px) {
+
+    .banner,
+    .hero__video-container,
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ndung {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .video iframe {
+        width: 100%;
+    }
+
+    .main-hop img {
+        max-width: 90%;
+    }
+}

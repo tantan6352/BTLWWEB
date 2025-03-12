@@ -1,0 +1,353 @@
+/* ===========MAIN======== */
+
+.slider {
+  margin-top: var(--header-height);
+  width: auto;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 150px 80px;
+}
+
+.img-fluid {
+  width: 100%;
+  height: 600px;
+}
+
+
+/* ===========================card-left---------------- */
+
+.card-left {
+  position: relative;
+  width: 600px;
+  height: 350px;
+  border-radius: 20px;
+  align-items: center;
+  border-radius: 20px;
+  transition: 0.5s;
+  display: flex;
+}
+
+.card-left .circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card-left .circle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0065c3;
+  clip-path: circle(120px at center);
+  transition: 1s;
+}
+
+.card-left:hover .circle:before {
+  background: #bb9339;
+  clip-path: circle(400px at center);
+  transition: 0.3s;
+}
+
+.card-left .product-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+  pointer-events: none;
+  transition: 0.7s;
+  object-fit: contain;
+}
+
+.card-left:hover .product-img {
+  left: 24%;
+  height: 500px;
+}
+
+.card-left .content {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 20%;
+  padding: 10px;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: 0.5s;
+}
+
+.card-left:hover .content {
+  right: 2%;
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 1s;
+  transition: 1.4s;
+}
+
+.card-left .content a {
+  position: relative;
+  color: #fff;
+  padding: 10px 0px;
+  border-radius: 8px;
+  background: linear-gradient(to top left, #d61212, #0065c3, #d61212);
+  margin-top: 0px;
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* =====================card--right================== */
+
+.card-right {
+  position: relative;
+  width: 600px;
+  height: 350px;
+  border-radius: 20px;
+  align-items: center;
+  border-radius: 20px;
+  transition: 0.5s;
+  display: flex;
+}
+
+.card-right .circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card-right .circle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0065c3;
+  clip-path: circle(120px at center);
+  transition: 1s;
+}
+
+.card-right:hover .circle:before {
+  background: #bb9339;
+  clip-path: circle(400px at center);
+  transition: 0.3s;
+}
+
+.card-right .product-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+  pointer-events: none;
+  transition: 0.7s;
+  object-fit: contain;
+}
+
+.card-right:hover .product-img {
+  left: 76%;
+  height: 500px;
+}
+
+.card-right .content {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  left: 20%;
+  padding: 10px;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: 0.5s;
+}
+
+.card-right:hover .content {
+  left: 2%;
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 1s;
+  transition: 1.4s;
+}
+
+.card-right .content a {
+  position: relative;
+  color: #fff;
+  padding: 10px 0px;
+  border-radius: 8px;
+  background: linear-gradient(to top right, #d61212, #0065c3, #d61212);
+  margin-top: 0px;
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card-left .content a:hover {
+  background: linear-gradient(to top right, #d61212, #0065c3, #d61212);
+}
+
+.card-right .content a:hover {
+  background: linear-gradient(to top left, #d61212, #0065c3, #d61212);
+}
+
+/* ================== */
+.img-fluid {
+  height: 300px;
+}
+
+/* ==========CSS Back ground */
+
+.card-left.bg-1 .circle::before {
+  background: #0861b5;
+}
+
+.card-left:hover.bg-1 .circle::before {
+  background: #d01024;
+}
+
+.card-right.bg-2 .circle::before {
+  background: #d83133;
+}
+
+.card-right:hover.bg-2 .circle::before {
+  background: #f4f6f8;
+}
+
+.card-left.bg-3 .circle::before {
+  background: #d83133;
+}
+
+.card-left:hover.bg-3 .circle::before {
+  background: #efebeb;
+}
+
+.card-right.bg-4 .circle::before {
+  background: #0065c3;
+}
+
+.card-right:hover.bg-4 .circle::before {
+  background: #e30a0a;
+}
+
+.card-left.bg-5 .circle::before {
+  background: #0065c3;
+}
+
+.card-left:hover.bg-5 .circle::before {
+  background: #333333;
+}
+
+.card-right.bg-6 .circle::before {
+  background: #d83133;
+}
+
+.card-right:hover.bg-6 .circle::before {
+  background: #7de9d7;
+}
+
+.card-left.bg-7 .circle::before {
+  background: #d83133;
+}
+
+.card-left:hover.bg-7 .circle::before {
+  background: #d0c5c5;
+}
+
+.card-right.bg-8 .circle::before {
+  background: #0065c3;
+}
+
+.card-right:hover.bg-8 .circle::before {
+  background: #dfd4d1;
+}
+
+.card-left.bg-9 .circle::before {
+  background: #0065c3;
+}
+
+.card-left:hover.bg-9 .circle::before {
+  background: #a43d17;
+}
+
+.card-right.bg-10 .circle::before {
+  background: #d83133;
+}
+
+.card-right:hover.bg-10 .circle::before {
+  background: #c71f08;
+}
+
+/* ==================heading=========== */
+
+.heading {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.heading h2 {
+  position: relative;
+  display: inline-block;
+  font-size: 30px;
+  color: #0065c3;
+  font-family: titleFont;
+}
+
+.heading h2::before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 2px;
+  bottom: 0;
+  left: -25%;
+  background-color: #0065c3;
+}
+
+.heading h2::after {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 2px;
+  bottom: 0;
+  right: -25%;
+  background-color: #0065c3;
+}
+
+.view-more {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.view-more button {
+  font-family: titleFont;
+  font-size: 20px;
+  padding: 16px 20px;
+  border: none;
+  background: linear-gradient(to top right, #d61212, #0065c3, #d61212);
+  border-radius: 30px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.view-more button:hover {
+  background: linear-gradient(to top left, #d61212, #0065c3, #d61212);
+}
