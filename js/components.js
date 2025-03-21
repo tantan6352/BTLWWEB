@@ -8,7 +8,7 @@ class MyHeader extends HTMLElement {
             left: 0;
             width: 100%;
             height: var(--header-height);
-            z-index: 10;
+            z-index: 100;
             display: flex;
             align-items: center;
             background-color: var(--primary-header);
@@ -130,6 +130,7 @@ class MyHeader extends HTMLElement {
         }
         
         .user-top span a {
+            font-family:titleFont;
             display: block;
             color: black;
             text-transform: uppercase;
@@ -157,24 +158,6 @@ class MyHeader extends HTMLElement {
         .user-main a img {
             width: 32px;
             transform: translate(-10px, -4px);
-        }
-        
-        .user-main .quantity-cart {
-            position: absolute;
-            content: '';
-            top: -8px;
-            right: -2px;
-            height: 20px;
-            width: 20px;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-            color: #ff0000;
-            background-color: blue;
-            animation: animateBounce ease-in-out 2s infinite;
-            font-weight: bold;
         }
     </style>
 

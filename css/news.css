@@ -2,8 +2,7 @@
 
 .banner {
     width: 100%;
-    margin-bottom: 20px;
-    margin-top: -870px;
+    margin-bottom: 100px;
 }
 
 .news-wrap {
@@ -53,6 +52,14 @@
     background: #d8dac3;
     box-shadow: inset 10px 10px 10px #ee3a03fb;
     border-radius: 4px;
+}
+
+img.img-fluid {
+    width: 100%;
+}
+
+img.img-fluid11 {
+    width: 170%;
 }
 
 .news-item {
@@ -121,7 +128,7 @@
 
 .news-show-row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 400px 400px;
     grid-gap: 50px;
 }
 
@@ -234,6 +241,7 @@
     margin: 20px 0 150px;
     width: auto;
     border-radius: 20px;
+
 }
 
 .apps {
@@ -277,7 +285,6 @@
     overflow-x: auto;
     height: 550px;
     transition: all 0.2s;
-    transform: scale(1);
 }
 
 .apps__list.active {

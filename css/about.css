@@ -1,108 +1,3 @@
-:root {
-    --primary-color: #da1919;
-    --text-color: #fffaf3;
-    --header-height: 90px;
-}
-
-
-/* width */
-
-body {
-    overflow-x: hidden;
-}
-
-body::-webkit-scrollbar {
-    width: 15px;
-}
-
-
-/* Track */
-
-body::-webkit-scrollbar-track {
-    box-shadow: inset 10px -10px 10px #000;
-    border-radius: 10px;
-}
-
-
-/* Handle */
-
-body::-webkit-scrollbar-thumb {
-    background: #fffaf3;
-    border-radius: 10px;
-    box-shadow: inset -10px 10px 10px #da1919;
-}
-
-
-/* Handle on hover */
-
-body::-webkit-scrollbar-thumb:hover {
-    background: #ccc;
-    box-shadow: inset 10px 10px 10px #da1919;
-}
-
-@font-face {
-    font-family: titleFont;
-    src: url(font/UTM\ Magnesium.ttf);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.img-fluid {
-    max-width: 100%;
-}
-
-.container {
-    width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-@keyframes animateColor {
-    0% {
-        color: #ff0000;
-    }
-
-    25% {
-        color: #ffff00;
-    }
-
-    50% {
-        color: #0000ff;
-    }
-
-    75% {
-        color: #008000;
-    }
-
-    100% {
-        color: #ff0000;
-    }
-}
-
-@keyframes animateScale3d {
-    0% {
-        transform: scale3d(1, 1, 1);
-    }
-
-    100% {
-        transform: scale(1.5, 1.5, 1.5);
-    }
-}
-
-@keyframes animateBounce {
-    0% {
-        transform: rotate3d(0);
-    }
-
-    100% {
-        transform: rotate3d(0, 1, 0, 360deg);
-    }
-}
-
-
 /* ====================MAIN=============== */
 
 .intro {
@@ -386,9 +281,9 @@ body::-webkit-scrollbar-thumb:hover {
 
 .sub-banner-container {
     position: relative;
-    background: url(/img/hh-about/Hinh-1-2.png) no-repeat center/cover;
+    background: url(/img/about/baner-about.png) no-repeat center/cover;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     margin: 100px 0;
 }
 
@@ -446,26 +341,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .follow-item:hover img {
-    filter: brightness(0.9);
-    transform: scale3d(1.2, 1.2, 1.2) rotate(10deg);
-}
-
-.follow-item:hover i {
-    opacity: 0.6;
-}
-
-.img-float {
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    right: 20%;
-    bottom: 20%;
-}
-
-.img-float i {
-    font-size: 200px;
-    color: #fffaf3;
-    opacity: 0.2;
+    filter: brightness(1);
+    transform: scale3d(1.2, 1.2, 1.2) rotateX(10deg);
 }
 
 .follow-list {

@@ -1,11 +1,12 @@
+// product
 var i = 0;
 var images = [];
 var time = 3000;
 
-images[0] = "/img/about/slider1.png";
-images[1] = "/img/about/slider2.png";
-images[2] = "/img/about/slider3.png";
-images[3] = "/img/about/slider4.png";
+images[0] = "/img/sanpham/banner/slider1.png";
+images[1] = "/img/sanpham/banner/slider2.png";
+images[2] = "/img/sanpham/banner/slider3.png";
+
 
 
 // change Image

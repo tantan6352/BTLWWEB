@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* width */
 
 body {
@@ -37,15 +43,6 @@ body::-webkit-scrollbar-thumb:hover {
     src: url(font/UTM\ Magnesium.ttf);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.img-fluid1 {
-    max-width: 100%;
-}
 
 .container {
     width: 100%;
@@ -71,25 +68,5 @@ body::-webkit-scrollbar-thumb:hover {
 
     100% {
         color: #ff0000;
-    }
-}
-
-@keyframes animateScale3d {
-    0% {
-        transform: scale3d(1, 1, 1);
-    }
-
-    100% {
-        transform: scale(1.5, 1.5, 1.5);
-    }
-}
-
-@keyframes animateBounce {
-    0% {
-        transform: rotate3d(0);
-    }
-
-    100% {
-        transform: rotate3d(0, 1, 0, 360deg);
     }
 }

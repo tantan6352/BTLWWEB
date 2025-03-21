@@ -1,8 +1,58 @@
-/* Hero Video */
+.banner-main {
+    width: 100%;
+    height: 800px;
+    background: url(/img/banner/Để\ CoCa\ CoCla\ Tiếp\ bước\ cùng\ bạn.png);
+    background-size: cover;
+    position: relative;
+    margin-top: 90px;
+}
+
+.slider {
+    width: 100%;
+    height: 800px;
+}
+
+.slider img {
+    width: 100%;
+    height: 800px;
+}
+
+.banner-1 {
+    width: 100%;
+    height: 700px;
+}
+
+.banner-text img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.text {
+    position: absolute;
+    left: 60%;
+    top: 190%;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 10px 5px 10px rgb(255, 255, 255);
+    gap: 10px;
+}
+
+h1 {
+    font-family: titleFont;
+    font-size: 90px;
+}
+
+/* Phần Hero Video */
 .hero__video-container {
     width: 100%;
-    position: relative;
     overflow: hidden;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero__video {
@@ -10,100 +60,110 @@
     height: auto;
 }
 
-.banner-s {
-    position: relative;
-    width: 100%;
-    padding-top: 43.4%;
-    background: url(/img/banner.png) no-repeat top/contain;
+.text-video {
+    position: absolute;
+    text-shadow: 10px 5px 10px rgb(37, 32, 32);
+    text-align: center;
+    color: var(--text-color);
+    font-size: 40px;
+    line-height: 1.4;
 }
 
-/* Banner */
+/* Banner Video */
 .banner {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 20px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #f8f8f8;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    justify-content: space-around;
+    background: #f05050; /* Màu đỏ Coca-Cola */
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Phần video */
+.video {
+    flex: 1;
+    max-width: 900px;
+    text-align: center;
 }
 
 .video iframe {
-    border-radius: 20px;
     width: 100%;
-    max-width: 800px;
+    height: 500px; /* Tăng chiều cao để hiển thị đẹp hơn */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Nội dung banner */
+/* Phần nội dung */
 .ndung {
-    margin-left: 20px;
-    max-width: 400px;
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
 }
 
 .ndung h2 {
-    color: #eb5b5b;
-    font-size: 28px;
-    margin-bottom: 10px;
+    font-size: 32px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .ndung p {
     font-size: 18px;
-    color: #555;
+    margin-bottom: 15px;
+    line-height: 3;
 }
 
-.ssang {
-    font-size: 20px;
-    color: #f7b500;
-    text-decoration: underline;
+/* Nút "Sẵn Sàng" */
+.sansang {
+    display: inline-block;
+    background: #fff;
+    color: #ff1b1b;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    width: 300px;
+    height: 40px;
 }
 
-.ssang:hover {
-    color: #ffa500;
-}
+.sansang:hover {
+    background: #e8f70e;
+    color: rgb(255, 255, 255);
+}  
 
 /* Hình ảnh quảng cáo */
-.gallery {
+.gallery{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 80px;
+    width: 100%;
+    line-height: 2;
+}
+.hop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
     margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
 }
 
 .main-hop img {
     width: 100%;
-    max-width: 400px;
-    border-radius: 20px;
+    max-width: 300px;
     transition: transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .main-hop img:hover {
-    transform: scale(1.05);
-}
-
-/* Đáp ứng thiết bị di động */
-@media (max-width: 768px) {
-
-    .banner,
-    .hero__video-container,
-    .gallery {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .ndung {
-        text-align: center;
-        margin: 20px 0;
-    }
-
-    .video iframe {
-        width: 100%;
-    }
-
-    .main-hop img {
-        max-width: 90%;
-    }
+    filter: brightness(0.9);
+    transform: scale3d(2, 1.5, 3) rotateY(50deg);
 }
